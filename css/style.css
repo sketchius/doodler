@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height:98vh;
+}
+
+.row {
+    flex-basis:1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cell {
+    color: black;
+    width: 100px;
+    height: auto;
+    flex-basis: 1000px;
+}
+
+div {
+    border-style: solid;
+    border-color: blue;
+    border-width:  1px;
+}
+
+.selected {
+    background-color: rgb(111, 255, 255);
+}
