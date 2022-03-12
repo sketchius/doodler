@@ -1,7 +1,8 @@
 .main {
     display: flex;
     flex-direction: column;
-    height:98vh;
+    height:600px;
+    width: 600px;
 }
 
 .row {
@@ -9,6 +10,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+* {
+    border-width: 0.3px;
+    border-color: blue;
+    border-style: solid;
 }
 
 .cell {
