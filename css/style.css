@@ -18,12 +18,6 @@
     flex-basis: 1000px;
 }
 
-div {
-    border-style: solid;
-    border-color: blue;
-    border-width:  1px;
-}
-
 .selected {
     background-color: rgb(111, 255, 255);
 }
