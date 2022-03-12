@@ -25,9 +25,15 @@ function initalizeGrid(gridSize) {
             let cellDiv = document.createElement("div");
             cellDiv.classList.add("cell");
             cellDiv.classList.add("grid");
-            // cellDiv.textContent = "cell";
-            cellDiv.addEventListener("mouseenter", function () { this.classList.add("selected"); });
-            //cellDiv.addEventListener("mouseleave", function() { this.classList.remove("selected"); });
+            cellDiv.setAttribute("data-shade",255);
+            cellDiv.addEventListener("mouseenter", function () {
+                //this.classList.add("selected");
+                let shade = this.getAttribute("data-shade");
+                shade = shade / 1.1;
+                this.style.backgroundColor = `rgb(${shade},${shade},${shade})`;
+                this.setAttribute("data-shade",shade);
+                
+            });
             rowDiv.appendChild(cellDiv);
         }
         mainContainer.appendChild(rowDiv);
